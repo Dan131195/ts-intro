@@ -80,7 +80,4 @@ var car1 = {
     maxSpeed: 170,
     fuelType: "GPL",
 };
-// Es. 18
-// Serve per rendere l'interface più generico, ovvero più riutilizzabile. Viengono utilizzati simile a dei parametri
-// Es. 19
 // Es. 20

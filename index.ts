@@ -139,7 +139,21 @@ const car1: MyCar = {
 };
 
 // Es. 18
-// Serve per rendere l'interface più generico, ovvero più riutilizzabile. Viengono utilizzati simile a dei parametri
+// Serve per rendere l'interface più generico, ovvero più riutilizzabile. Vengono utilizzati simile a dei parametri
+interface MyVehicle2<N> {
+  name: N;
+  year: number;
+  km: number;
+  brand: string;
+}
+
 // Es. 19
+// Si, si possono usare
+interface MyVehicle3<N, K, B> {
+  name: N;
+  year: number;
+  km: K;
+  brand: B;
+}
 
 // Es. 20

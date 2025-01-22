@@ -53,7 +53,7 @@ myType5 = null;
 myType5 = undefined;
 
 // Es. 9
-type Giorno =
+type WeekDays =
   | "Lunedì"
   | "Martedì"
   | "Mercoledì"

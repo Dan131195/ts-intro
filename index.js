@@ -48,8 +48,6 @@ myType4 = undefined;
 let myType5 = 2;
 myType5 = null;
 myType5 = undefined;
-// Es. 9
-// Non ho capito
 // Es. 10
 const numbers1 = [1, 2, 3];
 const numbers2 = [1, 2, 3];

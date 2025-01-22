@@ -53,7 +53,14 @@ myType5 = null;
 myType5 = undefined;
 
 // Es. 9
-// Non ho capito
+type Giorno =
+  | "Lunedì"
+  | "Martedì"
+  | "Mercoledì"
+  | "Giovedì"
+  | "Venerdì"
+  | "Sabato"
+  | "Domenica";
 
 // Es. 10
 const numbers1: number[] = [1, 2, 3];

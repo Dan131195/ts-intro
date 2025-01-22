@@ -157,3 +157,41 @@ interface MyVehicle3<N, K, B> {
 }
 
 // Es. 20
+// https://striveschool-api.herokuapp.com/food-books
+interface Book {
+  id: number;
+  title: string;
+  price: string;
+  imageUrl: string;
+  description: string;
+}
+
+const manipulateDom = (data: Book[]) => {
+  data.forEach((bookObj) => {
+    const main = document.getElementById("main");
+    const container = document.createElement("div");
+    const myImg = document.createElement("img");
+    myImg.setAttribute("src", bookObj.imageUrl);
+    container.appendChild(myImg);
+    main!.appendChild(container);
+  });
+};
+
+const getBooks = async () => {
+  try {
+    const response = await fetch(
+      "https://striveschool-api.herokuapp.com/food-books"
+    );
+    if (response.ok) {
+      const data: Book[] = await response.json();
+      console.log(data);
+      manipulateDom(data);
+    } else {
+      throw new Error("Errore nella chiamata");
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+getBooks();
